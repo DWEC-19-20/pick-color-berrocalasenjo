@@ -1,0 +1,39 @@
+/*@CarlosAsenjo
+    2ºDAW I.E.S. Ciudad Escolar
+    v1.2 - 02/10/2019*/
+
+table,
+td {
+    border: 1px outset;
+}
+
+.red {
+    background-color: red;
+    font-weight: bold;
+}
+
+.green {
+    background-color: green;
+    font-weight: bold;
+}
+
+.blue {
+    background-color: blue;
+    font-weight: bold;
+}
+
+#celda {
+    width: 2%;
+}
+
+#rojo {
+    width: 13%;
+}
+
+#verde {
+    width: 13%;
+}
+
+#azul {
+    width: 13%;
+}

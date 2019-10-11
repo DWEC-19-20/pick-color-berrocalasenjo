@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--@CarlosAsenjo
+    2ºDAW I.E.S. Ciudad Escolar
+    v1.2 - 02/10/2019-->
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+<html>
+
+<body align="center">
+
+    <h1>Color Picker</h1>
+
+    <table align="center">
+
+        <tr></tr>
+        <td class="red">
+            <label>Red
+            </td>
+            <td>
+                <input type="range" id="r" min="0" max="255" maxlength="3" onchange="updateTextInput1(this.value);"></input> <!--Valor Rojo --> 
+                </label>
+        </td>
+        <td class="celda">
+            <input type="text" id="rojo"></input>
+        </td>
+
+        <tr></tr>
+        <td class="green">
+            <label>Green 
+            </td>
+            <td>
+                <input type="range" id="g" min="0" max="255" maxlength="3" onchange="updateTextInput2(this.value);"></input> <!--Valor Verde --> 
+                </label>
+        </td>
+        <td class="celda">
+            <input type="text" id="verde"></input>
+        </td>
+
+        <tr></tr>
+        <td class="blue">
+            <label>Blue
+            </td>
+            <td>
+                <input type="range" id="b" min="0" max="255" maxlength="3" onchange="updateTextInput3(this.value);"></input> <!--Valor Azul --> 
+                </label>
+        </td>
+        <td class="celda">
+            <input type="text" id="azul"></input>
+        </td>
+
+        <tr></tr>
+        <td colspan="3"></td>
+
+        <tr></tr>
+        <td rowspan="3">
+            <!--Boton convertir colores -->
+            <input type="button" value="Convertir" name="convertir" onclick="main()"></input>
+        </td>
+
+        <tr>
+            <td>
+                <p id="hex"></p>
+            </td>
+            <td rowspan="2" id="color"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <p id="rgb"></p>
+            </td>
+        </tr>
+    </table>
+
+    <script src="js/main.js"></script>
+    <script src="js/rgb.js"></script>
+    <script src="js/hexadecimal.js"></script>
+
+</body>
+
+</html>
